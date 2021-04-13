@@ -36,10 +36,10 @@ class nuclear(submarine):
 #subclass 2 
 #sous-marin diesel
 class fuel(submarine):
-    def __init__(self, nuc_name, nuc_country, nuc_length, nuc_propulsion, nuc_speed):
-        self.propulsion = nuc_propulsion
-        self.speed = nuc_speed
-        super().__init__(nuc_name, nuc_country, nuc_length)
+    def __init__(self, f_name, f_country, f_length, f_propulsion, f_speed):
+        self.propulsion = f_propulsion
+        self.speed = f_speed
+        super().__init__(f_name, f_country, f_length)
      
     def displaypropfuel(self):
         print('the propulsion of %s is %s' % (self.name, self.propulsion))
